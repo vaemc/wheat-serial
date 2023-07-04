@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { defineConfig, externalizeDepsPlugin } from 'electron-vite'
 import commonjsExternals from 'vite-plugin-commonjs-externals'
 import vue from '@vitejs/plugin-vue'
-const externals = ['serialport']
+const externals = ['serialport','@serialport/parser-readline']
 export default defineConfig({
   main: {
     plugins: [externalizeDepsPlugin()]
@@ -19,7 +19,7 @@ export default defineConfig({
     plugins: [
       vue(),
       commonjsExternals({
-        externals
+       externals
       })
     ]
   }

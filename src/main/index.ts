@@ -7,7 +7,7 @@ function createWindow(): void {
   nativeTheme.themeSource = 'dark'
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 900,
+    width: 1100,
     height: 670,
     show: false,
     autoHideMenuBar: true,

@@ -2072,6 +2072,23 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+font-finder@^1.0.3, font-finder@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/font-finder/-/font-finder-1.1.0.tgz#2bff2b2762acba720239c8bec898a96daae90858"
+  integrity sha512-wpCL2uIbi6GurJbU7ZlQ3nGd61Ho+dSU6U83/xJT5UPFfN35EeCW/rOtS+5k+IuEZu2SYmHzDIPL9eA5tSYRAw==
+  dependencies:
+    get-system-fonts "^2.0.0"
+    promise-stream-reader "^1.0.1"
+
+font-ligatures@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/font-ligatures/-/font-ligatures-1.4.1.tgz#e8c9df7cf6bee80c0cca4a9a578618c7b1f5d8de"
+  integrity sha512-7W6zlfyhvCqShZ5ReUWqmSd9vBaUudW0Hxis+tqUjtHhsPU+L3Grf8mcZAtCiXHTzorhwdRTId2WeH/88gdFkw==
+  dependencies:
+    font-finder "^1.0.3"
+    lru-cache "^6.0.0"
+    opentype.js "^0.8.0"
+
 form-data@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
@@ -2157,6 +2174,11 @@ get-stream@^5.1.0:
   integrity sha512-nBF+F1rAZVCu/p7rjzgA+Yb4lfYXrpl7a6VmJrU8wF9I1CKvP/QwPNZHnOlwbTkY6dvtFIzFMSyQXbLoTQPRpA==
   dependencies:
     pump "^3.0.0"
+
+get-system-fonts@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/get-system-fonts/-/get-system-fonts-2.0.2.tgz#7ada3cc41322daf17c204a6f07c6588341cbc9cb"
+  integrity sha512-zzlgaYnHMIEgHRrfC7x0Qp0Ylhw/sHpM6MHXeVBTYIsvGf5GpbnClB+Q6rAPdn+0gd2oZZIo6Tj3EaWrt4VhDQ==
 
 glob-parent@^5.1.2:
   version "5.1.2"
@@ -2855,6 +2877,13 @@ once@^1.3.0, once@^1.3.1, once@^1.4.0:
   dependencies:
     wrappy "1"
 
+opentype.js@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/opentype.js/-/opentype.js-0.8.0.tgz#acabcfa1642fbe894a3e4d759e43ba694e02bd35"
+  integrity sha512-FQHR4oGP+a0m/f6yHoRpBOIbn/5ZWxKd4D/djHVJu8+KpBTYrJda0b7mLcgDEMWXE9xBCJm+qb0yv6FcvPjukg==
+  dependencies:
+    tiny-inflate "^1.0.2"
+
 optionator@^0.9.3:
   version "0.9.3"
   resolved "https://registry.yarnpkg.com/optionator/-/optionator-0.9.3.tgz#007397d44ed1872fdc6ed31360190f81814e2c64"
@@ -3007,6 +3036,11 @@ progress@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+
+promise-stream-reader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/promise-stream-reader/-/promise-stream-reader-1.0.1.tgz#4e793a79c9d49a73ccd947c6da9c127f12923649"
+  integrity sha512-Tnxit5trUjBAqqZCGWwjyxhmgMN4hGrtpW3Oc/tRI4bpm/O2+ej72BB08l6JBnGQgVDGCLvHFGjGgQS6vzhwXg==
 
 prr@~1.0.1:
   version "1.0.1"
@@ -3363,6 +3397,11 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
+tiny-inflate@^1.0.2:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/tiny-inflate/-/tiny-inflate-1.0.3.tgz#122715494913a1805166aaf7c93467933eea26c4"
+  integrity sha512-pkY1fj1cKHb2seWDy0B16HeWyczlJA9/WW3u3c4z/NiWDsO3DOU5D7nhTLE9CF0yXv/QZFY7sEJmj24dK+Rrqw==
+
 tmp-promise@^3.0.2:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/tmp-promise/-/tmp-promise-3.0.3.tgz#60a1a1cc98c988674fcbfd23b6e3367bdeac4ce7"
@@ -3590,10 +3629,48 @@ xmlbuilder@>=11.0.1, xmlbuilder@^15.1.1:
   resolved "https://registry.yarnpkg.com/xmlbuilder/-/xmlbuilder-15.1.1.tgz#9dcdce49eea66d8d10b42cae94a79c3c8d0c2ec5"
   integrity sha512-yMqGBqtXyeN1e3TGYvgNgDVZ3j84W4cwkOXQswghol6APgZWaff9lnbvN7MHYJOiXsvGPXtjTYJEiC9J2wv9Eg==
 
+xterm-addon-canvas@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-canvas/-/xterm-addon-canvas-0.4.0.tgz#a6ee6a56deb0c495fcef29afe6d94b7119a0f334"
+  integrity sha512-iTC8CdjX9+hGX7jiEuiDMXzHsY/FKJdVnbjep5xjRXNu7RKOk15xuecIkJ7HZORqMVPpr4DGS3jyd9XUoBuxqw==
+
 xterm-addon-fit@^0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/xterm-addon-fit/-/xterm-addon-fit-0.7.0.tgz#b8ade6d96e63b47443862088f6670b49fb752c6a"
   integrity sha512-tQgHGoHqRTgeROPnvmtEJywLKoC/V9eNs4bLLz7iyJr1aW/QFzRwfd3MGiJ6odJd9xEfxcW36/xRU47JkD5NKQ==
+
+xterm-addon-ligatures@^0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-ligatures/-/xterm-addon-ligatures-0.6.0.tgz#c51801b0150c62ac1165654757b55c796457d195"
+  integrity sha512-DxiYCXXYEpnwr8li4/QhG64exjrLX1nHBfNNfrQgx5e8Z9tK2SjWKpxI6PZEy++8+YdL1F7VjWI4aKOaDt2VVw==
+  dependencies:
+    font-finder "^1.1.0"
+    font-ligatures "^1.4.1"
+
+xterm-addon-search@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-search/-/xterm-addon-search-0.12.0.tgz#2ef8f56aecf699a3989223a1260f1e079d7c74e2"
+  integrity sha512-hXAuO7Ts2+Jf9K8mZrUx8IFd7c/Flgks/jyqA1L4reymyfmXtcsd+WDLel8R9Tgy2CLyKABVBP09/Ua/FmXcvg==
+
+xterm-addon-serialize@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-serialize/-/xterm-addon-serialize-0.10.0.tgz#c16a8cb456dcbd2f008fa83d15ce1d4721892e01"
+  integrity sha512-Syp9eSBypn70iAczcJ+kAi0foQIepAvFS6x53JwI4XylTBHn87Ep9fovslhwmUV3rwH2yMnpdDjXH5W/whx2lA==
+
+xterm-addon-unicode11@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-unicode11/-/xterm-addon-unicode11-0.5.0.tgz#41c0d96acc1e3bb6c6596eee64e163b6bca74be7"
+  integrity sha512-Jm4/g4QiTxiKiTbYICQgC791ubhIZyoIwxAIgOW8z8HWFNY+lwk+dwaKEaEeGBfM48Vk8fklsUW9u/PlenYEBg==
+
+xterm-addon-web-links@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-web-links/-/xterm-addon-web-links-0.8.0.tgz#2cb1d57129271022569208578b0bf4774e7e6ea9"
+  integrity sha512-J4tKngmIu20ytX9SEJjAP3UGksah7iALqBtfTwT9ZnmFHVplCumYQsUJfKuS+JwMhjsjH61YXfndenLNvjRrEw==
+
+xterm-addon-webgl@^0.15.0:
+  version "0.15.0"
+  resolved "https://registry.yarnpkg.com/xterm-addon-webgl/-/xterm-addon-webgl-0.15.0.tgz#c10f93ca619524f5a470eaac44258bab0ae8e3c7"
+  integrity sha512-ZLcqogMFHr4g/YRhcCh3xE8tTklnyut/M+O/XhVsFBRB/YCvYhPdLQ5/AQk54V0wjWAQpa8CF3W8DVR9OqyMCg==
 
 xterm@^5.2.1:
   version "5.2.1"
